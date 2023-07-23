@@ -22,7 +22,7 @@ public class TestControlers {
 		Registration registration = new Registration();
 		patientRepo.save(registration);
 	}
-	
+	//hello
 	@PostMapping("/test1")
 	public void post(PatientDTO TestDTO)
 	{
