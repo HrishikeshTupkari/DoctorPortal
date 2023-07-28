@@ -28,7 +28,7 @@ public class RegistrationService {
 		password.setEmail(patientDTO.getEmail());
 		password.setRegistrationid(registration.getRegistrationid());
 		password.setPassword(patientDTO.getPassword());
-		passwordRepo.save(null);
+		passwordRepo.save(password);
 		
 	}
 

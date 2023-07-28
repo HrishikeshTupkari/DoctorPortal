@@ -1,5 +1,6 @@
 package com.doctor.doctorportal.entity;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import lombok.AllArgsConstructor;
@@ -12,6 +13,7 @@ public class Keys {
 	
 	@Id
 	private Long registrationid;
+	@Column(unique = true)
 	private String email;
 	private String password;
 	public String getEmail() {
